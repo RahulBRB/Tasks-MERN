@@ -8,7 +8,9 @@ app.use(cors());
 
 mongoose.connect("mongodb://localhost:5000", {
     useNewUrlParser:true,
-    useUnifiedTopology:true,
-}).then(() => console.log("connection established")).catch(console.error);
+    useUnifiedTopology:true
+})
+    .then(() => console.log("connection established"))
+    .catch(console.error);
 
 app.listen(3001, () => console.log("server started on port 3001"));
